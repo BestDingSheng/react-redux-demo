@@ -15,7 +15,7 @@ npm install -g create-react-app
 * npm run start
 
 ### 预览
-![](./preview.gif)
+![](./preview/preview.gif)
 
 
 ### 目录结构
