@@ -1,5 +1,5 @@
-
-export default function(state=0,action){
+import { combineReducers } from 'redux'
+function counter(state=0,action){
   if(action.type=='jia'){
     return state+1
   }else if(action.type=='jian'){
@@ -10,3 +10,18 @@ export default function(state=0,action){
     return state
   }
 }
+
+function todos(state = [], action) {
+  switch (action.type) {
+  case 'ADD_TODO':
+    return state.concat([action.text])
+  default:
+    return state
+  }
+}
+
+
+export default combineReducers({
+  todos,
+  counter
+})

@@ -23,7 +23,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
-  value: state
+  value: state.counter
 })
 
 const mapDispatchToProps = dispatch => ({
